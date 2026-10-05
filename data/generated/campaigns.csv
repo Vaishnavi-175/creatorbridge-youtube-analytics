@@ -1,0 +1,16 @@
+campaign_id,brand_id,campaign_name,product,campaign_category,budget,start_date,end_date
+1,1,Smartphone Launch,Smartphone,Technology,250000,2026-01-10,2026-01-24
+2,2,Glow Up Campaign,Skincare Kit,Beauty,180000,2026-01-30,2026-02-13
+3,3,Fitness Challenge,Fitness Tracker,Fitness,150000,2026-02-19,2026-03-05
+4,4,Invest Smart,Investment App,Finance,220000,2026-03-11,2026-03-25
+5,5,Snack & Share,Snack Box,Food,100000,2026-03-31,2026-04-14
+6,6,Learn Better,Online Course,Education,120000,2026-04-20,2026-05-04
+7,7,Level Up Gaming,Gaming Headset,Gaming,200000,2026-05-10,2026-05-24
+8,8,Beauty Essentials,Makeup Kit,Beauty,140000,2026-05-30,2026-06-13
+9,9,Audio Upgrade,Wireless Earbuds,Technology,175000,2026-06-19,2026-07-03
+10,10,Healthy Lifestyle,Protein Supplement,Fitness,130000,2026-07-09,2026-07-23
+11,1,Next Gen Phone,Smartphone,Technology,300000,2026-07-29,2026-08-12
+12,3,Summer Fitness,Fitness Tracker,Fitness,160000,2026-08-18,2026-09-01
+13,4,Finance Awareness,Investment App,Finance,190000,2026-09-07,2026-09-21
+14,7,Gaming Fest,Gaming Headset,Gaming,225000,2026-09-27,2026-10-11
+15,9,Tech Accessories,Wireless Earbuds,Technology,210000,2026-10-17,2026-10-31
