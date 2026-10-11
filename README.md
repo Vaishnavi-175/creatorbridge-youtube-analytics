@@ -8,17 +8,17 @@
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-**CreatorBridge** is a data-driven analytics project designed to help brands evaluate YouTube creators, understand audience patterns, and analyze influencer marketing campaign performance.
+CreatorBridge is a data-driven analytics project designed to help brands evaluate YouTube creators, understand audience patterns, and analyze influencer marketing campaign performance.
 
-By combining Python-based data processing, SQL concepts, a Streamlit application, and interactive Power BI dashboards, CreatorBridge demonstrates how raw creator and campaign metrics can be transformed into meaningful business insights.
+By combining Python-based data processing, SQL, a Streamlit application, and interactive Power BI dashboards, CreatorBridge demonstrates how creator and campaign metrics can be transformed into meaningful business insights.
 
-> **Project Focus:** Creator Performance Analytics | Influencer Marketing | Campaign Measurement | Data Visualization
+**Project Focus:** Creator Analytics | Influencer Marketing | Campaign Performance | Business Intelligence | Data Visualization
 
 ---
 
 ## 📊 Dashboard Preview
 
-CreatorBridge features four Power BI dashboard pages covering executive-level metrics, creator performance, campaign analytics, and audience insights.
+CreatorBridge includes four Power BI dashboard pages for exploring creator performance, campaign effectiveness, and audience insights.
 
 ### 1. Executive Dashboard
 
@@ -46,20 +46,54 @@ Analyze creator distribution by language and category, along with subscriber-rel
 
 ---
 
+## 🖥️ Streamlit Application Preview
+
+The Streamlit application provides a Python-powered interface for exploring creator analytics, campaign-related insights, and data quality indicators.
+
+### 1. Creator 360
+
+![Creator 360](screenshots/creator%20360.png)
+
+### 2. Creator Comparison
+
+![Creator Comparison](screenshots/creator%20camparision.png)
+
+### 3. Campaign Simulator
+
+![Campaign Simulator](screenshots/campaign%20simulator.png)
+
+### 4. Data Quality
+
+![Data Quality](screenshots/Data%20Quality.png)
+
+### 5. Executive Overview
+
+![Executive Overview](screenshots/executive%20overview.png)
+
+### 6. Campaign Intelligence
+
+![Campaign Intelligence](screenshots/campaign%20intelligence.png)
+
+### 7. Audience Intelligence
+
+![Audience Intelligence](screenshots/Audience%20intelligence.png)
+
+---
+
 ## 🎯 Business Problem
 
-Brands often face challenges when selecting YouTube creators for influencer marketing campaigns. Subscriber counts alone do not fully explain engagement quality, audience relevance, or campaign effectiveness.
+Choosing the right YouTube creator for an influencer marketing campaign involves more than looking at subscriber counts. Brands also need to consider engagement, audience relevance, campaign reach, clicks, conversions, and overall performance.
 
-CreatorBridge explores a structured, analytics-driven approach to these challenges by bringing creator metrics, audience indicators, and campaign performance measures into one project.
+CreatorBridge explores how data analytics can help address these challenges by bringing creator metrics, audience indicators, and campaign performance measures into a structured analytical solution.
 
 ### Project Objectives
 
 - Evaluate and compare YouTube creator performance.
 - Analyze engagement rates, views, and subscriber counts.
 - Compare creator performance across categories and languages.
-- Measure campaign reach, clicks, conversions, and conversion rates.
+- Measure campaign views, clicks, conversions, and conversion rates.
 - Develop a calculated scoring approach for creator comparison.
-- Present business insights through interactive Power BI dashboards.
+- Present insights through interactive Power BI dashboards.
 - Provide a Python-based interface for exploring analytics.
 
 ---
@@ -88,11 +122,9 @@ CreatorBridge explores a structured, analytics-driven approach to these challeng
 - Creator distribution by category.
 - Subscriber analysis across categories.
 - Comparison of creator categories across languages.
-- Creator-level audience and profile overview.
+- Creator-level profile and audience-related indicators.
 
 ### 📊 Interactive Power BI Dashboards
-
-The Power BI report contains four pages:
 
 | Dashboard Page | Purpose |
 |---|---|
@@ -101,15 +133,17 @@ The Power BI report contains four pages:
 | Campaign Analytics | Campaign metrics and conversion analysis |
 | Audience Insights | Category, language, and subscriber insights |
 
-### 🐍 Python & Streamlit Application
+### 🐍 Streamlit Analytics Application
 
-The project includes a Streamlit application and Python utilities for exploring project analytics and supporting application-level data validation.
+The project includes a Streamlit application with views for creator analysis, comparisons, campaign exploration, audience insights, and data quality.
+
+The application and its utilities are included in the repository. The availability of any specific feature depends on the implemented application code and its configured data.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Technology | Application |
+| Technology | Purpose |
 |---|---|
 | Python | Data processing, analysis, and application development |
 | Pandas | Data manipulation and transformation |
@@ -117,7 +151,8 @@ The project includes a Streamlit application and Python utilities for exploring 
 | Power BI | Interactive dashboards and business intelligence |
 | Streamlit | Python-based analytics interface |
 | Jupyter Notebook | Data generation and experimentation |
-| Git & GitHub | Version control and project collaboration |
+| Git | Version control |
+| GitHub | Source code hosting and project collaboration |
 
 ---
 
@@ -129,9 +164,9 @@ The project dataset includes:
 
 - **Creator Performance Score** — a creator-level performance indicator.
 - **Campaign Score** — a metric for campaign-level comparison.
-- **CreatorBridge Score** — a combined project scoring indicator.
+- **CreatorBridge Score** — a project scoring indicator for comparing creators.
 
-These metrics help organize creator comparisons into a structured analytical framework. Their interpretation depends on the underlying formulas and available data; a higher score does not guarantee better results for every brand or campaign.
+These metrics help organize creator comparisons into a structured analytical framework. Their interpretation depends on the underlying formulas and available data. A higher score does not guarantee better results for every brand or campaign.
 
 ---
 
@@ -144,7 +179,7 @@ CreatorBridge/
 ├── documentation/         # Project documentation
 ├── powerbi/               # Power BI dashboard report
 ├── python/                # Python notebooks and analysis
-├── screenshots/           # Dashboard preview images
+├── screenshots/           # Power BI and Streamlit previews
 ├── sql/                   # SQL scripts and queries
 ├── tests/                 # Project tests
 ├── web/                   # Streamlit application
@@ -159,14 +194,14 @@ CreatorBridge/
 
 ## 🚀 Getting Started
 
-Follow these steps to run the project locally.
+Follow these steps to run CreatorBridge locally.
 
 ### Prerequisites
 
 - Python installed on your system.
 - Git installed on your system.
 - Power BI Desktop to open the `.pbix` report.
-- Project dependencies listed in `requirements.txt`.
+- Dependencies listed in `requirements.txt`.
 
 ### Step 1: Clone the Repository
 
@@ -193,24 +228,24 @@ python -m pip install -r requirements.txt
 ### Step 4: Run the Streamlit Application
 
 ```bash
-streamlit run web/app.py
+python -m streamlit run web/app.py
 ```
 
-The application will display a local URL in the terminal. Open that URL in your browser.
+Open the local URL displayed in the terminal to access the application in your browser.
 
 ### Step 5: Open the Power BI Dashboard
 
-Open this report in Power BI Desktop:
+Open the report in Power BI Desktop:
 
-[`CreatorBridge_YouTube_Analytics_Dashboard.pbix`](powerbi/CreatorBridge_YouTube_Analytics_Dashboard.pbix)
+[**CreatorBridge Power BI Dashboard (.pbix)**](powerbi/CreatorBridge_YouTube_Analytics_Dashboard.pbix)
 
-**Note:** Successful execution depends on the availability of the required datasets, compatible package versions, and correctly configured file paths.
+**Note:** Successful execution depends on compatible dependencies, available datasets, and correctly configured file paths.
 
 ---
 
 ## 💡 Business Questions Explored
 
-CreatorBridge is designed to help explore questions such as:
+CreatorBridge is designed to explore questions such as:
 
 1. Which creators have stronger engagement relative to their audience size?
 2. How does creator performance vary across categories?
@@ -218,19 +253,20 @@ CreatorBridge is designed to help explore questions such as:
 4. How do campaign conversions and conversion rates compare?
 5. How are creators distributed across languages and categories?
 6. How can multiple performance indicators support creator selection?
-7. Which metrics should brands consider when evaluating creator partnerships?
+7. Which metrics should brands consider when evaluating potential creator partnerships?
 
 ---
 
-## 📌 Key Analytical Areas
+## 📌 Analytical Approach
 
-The project brings together several dimensions of data analysis:
+The project brings together several areas of data analytics:
 
 - **Descriptive Analytics:** Understand creator and campaign performance.
 - **Comparative Analytics:** Compare creators, categories, and campaigns.
 - **Performance Measurement:** Review engagement and conversion indicators.
 - **Data Visualization:** Communicate findings through Power BI dashboards.
 - **Application Development:** Explore analytics through a Streamlit interface.
+- **Data Validation:** Support data quality checks through Python utilities.
 
 ---
 
@@ -265,12 +301,11 @@ It demonstrates practical work across data preparation, analytical metrics, scor
 
 **Developed by Vaishnavi**
 
-- GitHub: [@Vaishnavi-175](https://github.com/Vaishnavi-175)
-- Repository: [CreatorBridge – YouTube Creator & Brand Analytics](https://github.com/Vaishnavi-175/creatorbridge-youtube-analytics)
+- GitHub Profile: [@Vaishnavi-175](https://github.com/Vaishnavi-175)
+- Project Repository: [CreatorBridge – YouTube Creator & Brand Analytics](https://github.com/Vaishnavi-175/creatorbridge-youtube-analytics)
 
 ---
 
 ### ⭐ CreatorBridge
 
 *Connecting creator insights with smarter brand decisions.*
-
